@@ -1,0 +1,231 @@
+[1;r[100;1H
+Copyright (c) <2010-2016>, Intel Corporation. All rights reserved. Powered by Intel® DPDK
+EAL: Probing VFIO support...
+EAL: VFIO support initialized
+EAL: PCI device 0000:01:00.0 on NUMA socket 0
+EAL:   Device is blacklisted, not initializing
+EAL: PCI device 0000:01:00.1 on NUMA socket 0
+EAL:   Device is blacklisted, not initializing
+EAL: PCI device 0000:04:00.0 on NUMA socket 0
+EAL:   Device is blacklisted, not initializing
+EAL: PCI device 0000:04:00.1 on NUMA socket 0
+EAL:   Device is blacklisted, not initializing
+EAL: PCI device 0000:83:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:10fb net_ixgbe
+EAL: PCI device 0000:83:00.1 on NUMA socket 1
+EAL:   probe driver: 8086:10fb net_ixgbe
+[0;39;49m[1;r[45;1H
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   Copyright (c) <2010-2016>, Intel Corporation. All rights reserved.
+   Pktgen created by: Keith Wiles -- >>> Powered by Intel® DPDK <<<
+
+Lua 5.3.3  Copyright (C) 1994-2016 Lua.org, PUC-Rio
+>>> Packet Burst 32, RX Desc 512, TX Desc 512, mbufs/port 4096, mbuf cache 512
+
+=== port to lcore mapping table (# lcores 5) ===
+   lcore:     0     1     2     3     4     5     6     7 
+port   0:  D: T  1: 0  0: 0  1: 0  0: 0  0: 1  0: 0  0: 1 =  2: 2
+port   1:  D: T  1: 0  0: 0  1: 0  0: 0  0: 1  0: 0  0: 1 =  2: 2
+Total   :  0: 0  2: 0  0: 0  2: 0  0: 0  0: 2  0: 0  0: 2
+    Display and Timer on lcore 0, rx:tx counts per port/lcore
+
+Configuring 2 ports, MBUF Size 1920, MBUF Cache Size 512
+Lcore:
+    1, RX-Only
+                RX( 2): ( 0: 0) ( 1: 0) 
+    3, RX-Only
+                RX( 2): ( 0: 1) ( 1: 1) 
+    5, TX-Only
+                TX( 2): ( 0: 0) ( 1: 0) 
+    7, TX-Only
+                TX( 2): ( 0: 1) ( 1: 1) 
+
+Port :
+    0, nb_lcores  4, private 0x946930, lcores:  1  3  5  7 
+    1, nb_lcores  4, private 0x948c78, lcores:  1  3  5  7 
+
+
+
+** Default Info (0000:83:00.0, if_index:0) **
+   max_vfs        :   0, min_rx_bufsize    :1024, max_rx_pktlen : 15872
+   max_rx_queues  : 128, max_tx_queues     :  64
+   max_mac_addrs  : 127, max_hash_mac_addrs:4096, max_vmdq_pools:    64
+   rx_offload_capa:  31, tx_offload_capa   :  63, reta_size     :   128, flow_type_rss_offloads:0000000000038d34
+   vmdq_queue_base:   0, vmdq_queue_num    : 128, vmdq_pool_base:     0
+** RX Conf **
+   pthresh        :   8, hthresh          :   8, wthresh        :     0
+   Free Thresh    :  32, Drop Enable      :   0, Deferred Start :     0
+** TX Conf **
+   pthresh        :  32, hthresh          :   0, wthresh        :     0
+   Free Thresh    :  32, RS Thresh        :  32, Deferred Start :     0, TXQ Flags:00000f01
+
+Initialize Port 0 -- TxQ 2, RxQ 2,  Src MAC 00:1b:21:6b:22:e4
+    Create: Default RX  0:0  - Memory used (MBUFs 4096 x (size 1920 + Hdr 128)) + 192 =   8193 KB headroom 128 2176
+      Set RX queue stats mapping pid 0, q 0, lcore 1
+
+    Create: Default RX  0:1  - Memory used (MBUFs 4096 x (size 1920 + Hdr 128)) + 192 =   8193 KB headroom 128 2176
+      Set RX queue stats mapping pid 0, q 1, lcore 3
+
+
+    Create: Default TX  0:0  - Memory used (MBUFs 4096 x (size 1920 + Hdr 128)) + 192 =   8193 KB headroom 128 2176
+    Create: Range TX    0:0  - Memory used (MBUFs 4096 x (size 1920 + Hdr 128)) + 192 =   8193 KB headroom 128 2176
+    Create: Sequence TX 0:0  - Memory used (MBUFs 4096 x (size 1920 + Hdr 128)) + 192 =   8193 KB headroom 128 2176
+    Create: Special TX  0:0  - Memory used (MBUFs   64 x (size 1920 + Hdr 128)) + 192 =    129 KB headroom 128 2176
+
+    Create: Default TX  0:1  - Memory used (MBUFs 4096 x (size 1920 + Hdr 128)) + 192 =   8193 KB headroom 128 2176
+    Create: Range TX    0:1  - Memory used (MBUFs 4096 x (size 1920 + Hdr 128)) + 192 =   8193 KB headroom 128 2176
+    Create: Sequence TX 0:1  - Memory used (MBUFs 4096 x (size 1920 + Hdr 128)) + 192 =   8193 KB headroom 128 2176
+    Create: Special TX  0:1  - Memory used (MBUFs   64 x (size 1920 + Hdr 128)) + 192 =    129 KB headroom 128 2176
+
+                                                                       Port memory used =  65794 KB
+
+** Default Info (0000:83:00.1, if_index:0) **
+   max_vfs        :   0, min_rx_bufsize    :1024, max_rx_pktlen : 15872
+   max_rx_queues  : 128, max_tx_queues     :  64
+   max_mac_addrs  : 127, max_hash_mac_addrs:4096, max_vmdq_pools:    64
+   rx_offload_capa:  31, tx_offload_capa   :  63, reta_size     :   128, flow_type_rss_offloads:0000000000038d34
+   vmdq_queue_base:   0, vmdq_queue_num    : 128, vmdq_pool_base:     0
+** RX Conf **
+   pthresh        :   8, hthresh          :   8, wthresh        :     0
+   Free Thresh    :  32, Drop Enable      :   0, Deferred Start :     0
+** TX Conf **
+   pthresh        :  32, hthresh          :   0, wthresh        :     0
+   Free Thresh    :  32, RS Thresh        :  32, Deferred Start :     0, TXQ Flags:00000f01
+
+Initialize Port 1 -- TxQ 2, RxQ 2,  Src MAC 00:1b:21:6b:22:e5
+    Create: Default RX  1:0  - Memory used (MBUFs 4096 x (size 1920 + Hdr 128)) + 192 =   8193 KB headroom 128 2176
+      Set RX queue stats mapping pid 1, q 0, lcore 1
+
+    Create: Default RX  1:1  - Memory used (MBUFs 4096 x (size 1920 + Hdr 128)) + 192 =   8193 KB headroom 128 2176
+      Set RX queue stats mapping pid 1, q 1, lcore 3
+
+
+    Create: Default TX  1:0  - Memory used (MBUFs 4096 x (size 1920 + Hdr 128)) + 192 =   8193 KB headroom 128 2176
+    Create: Range TX    1:0  - Memory used (MBUFs 4096 x (size 1920 + Hdr 128)) + 192 =   8193 KB headroom 128 2176
+    Create: Sequence TX 1:0  - Memory used (MBUFs 4096 x (size 1920 + Hdr 128)) + 192 =   8193 KB headroom 128 2176
+    Create: Special TX  1:0  - Memory used (MBUFs   64 x (size 1920 + Hdr 128)) + 192 =    129 KB headroom 128 2176
+
+    Create: Default TX  1:1  - Memory used (MBUFs 4096 x (size 1920 + Hdr 128)) + 192 =   8193 KB headroom 128 2176
+    Create: Range TX    1:1  - Memory used (MBUFs 4096 x (size 1920 + Hdr 128)) + 192 =   8193 KB headroom 128 2176
+    Create: Sequence TX 1:1  - Memory used (MBUFs 4096 x (size 1920 + Hdr 128)) + 192 =   8193 KB headroom 128 2176
+    Create: Special TX  1:1  - Memory used (MBUFs   64 x (size 1920 + Hdr 128)) + 192 =    129 KB headroom 128 2176
+
+                                                                       Port memory used =  65794 KB
+                                                                      Total memory used = 131588 KB
+Port  0: Link Up - speed 10000 Mbps - full-duplex <Enable promiscuous mode>
+Port  1: Link Up - speed 10000 Mbps - full-duplex <Enable promiscuous mode>
+
+
+=== Display processing on lcore 0
+  RX processing lcore:   1 rx:  2 tx:  0
+  RX processing lcore:   3 rx:  2 tx:  0
+  TX processing lcore:   5 rx:  0 tx:  2
+  TX processing lcore:   7 rx:  0 tx:  2
+[1;r[45;1H
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[2J[100;1H7[1;1H-[1;20H<Main Page>  Copyright (c) <2010-2016>, Intel Corporation[1;3HPorts 0-1 of 2[2;1H  Flags:Port        [3;1HLink State          [4;1HPkts/s Max/Rx       [5;1H       Max/Tx       [6;1HMBits/s Rx/Tx       [7;1HBroadcast           [8;1HMulticast           [9;1H  64 Bytes          [10;1H  65-127            [11;1H  128-255           [12;1H  256-511           [13;1H  512-1023          [14;1H  1024-1518         [15;1HRunts/Jumbos        [16;1HErrors Rx/Tx        [17;1HTotal Rx Pkts       [18;1H      Tx Pkts       [19;1H      Rx MBs        [20;1H      Tx MBs        [21;1HARP/ICMP Pkts       [23;1HPattern Type        [24;1HTx Count/% Rate     [25;1HPktSize/Tx Burst    [26;1HSrc/Dest Port       [27;1HPkt Type:VLAN ID    [28;1HDst  IP Address     [29;1HSrc  IP Address     [30;1HDst MAC Address     [31;1HSrc MAC Address     [32;1HVendID/PCI Addr     [35;r[34;1H-------------------------------------------------------------------------------[34;3H Pktgen Ver: 3.1.0 (DPDK 16.11.0)  Powered by Intel® DPDK [2;19H:[3;19H:[4;19H:[5;19H:[6;19H:[7;19H:[8;19H:[9;19H:[10;19H:[11;19H:[12;19H:[13;19H:[14;19H:[15;19H:[16;19H:[17;19H:[18;19H:[19;19H:[20;19H:[21;19H:[22;19H:[23;19H:[24;19H:[25;19H:[26;19H:[27;19H:[28;19H:[29;19H:[30;19H:[31;19H:[32;19H:[23;20H             abcd...[24;20H      Forever / 100%[25;20H           64 /   32[26;20H         1234 / 5678[27;20H     IPv4 / TCP:0001[28;20H         192.168.1.1[29;20H      192.168.0.1/24[30;20H   00:1b:21:6b:22:e5[31;20H   00:1b:21:6b:22:e4[32;20H   8086:10fb/83:00.0[23;40H             abcd...[24;40H      Forever / 100%[25;40H           64 /   32[26;40H         1234 / 5678[27;40H     IPv4 / TCP:0001[28;40H         192.168.0.1[29;40H      192.168.1.1/24[30;40H   00:1b:21:6b:22:e4[31;40H   00:1b:21:6b:22:e5[32;40H   8086:10fb/83:00.1[3;60H     ----TotalRate----[K[2;20H   P--------------:0[3;20H       <UP-10000-FD>[4;20H                 0/0[5;20H                 0/0[6;20H                 0/0[7;20H                   0[8;20H                   0[9;20H                   0[10;20H                   0[11;20H                   0[12;20H                   0[13;20H                   0[14;20H                   0[15;20H                 0/0[16;20H                 0/0[17;20H                   0[18;20H                   0[19;20H                   0[20;20H                   0[21;20H                 0/0[2;40H   P--------------:1[3;40H       <UP-10000-FD>[4;40H                 0/0[5;40H                 0/0[6;40H                 0/0[7;40H                   0[8;40H                   0[9;40H                   0[10;40H                   0[11;40H                   0[12;40H                   0[13;40H                   0[14;40H                   0[15;40H                 0/0[16;40H                 0/0[17;40H                   0[18;40H                   0[19;40H                   0[20;40H                   0[21;40H                 0/0[4;60H                   0/0[K[5;60H                   0/0[K[6;60H                   0/0[K8Pktgen > 
+Pktgen> [2J[1;r[100;1H
+RATE:1
+SIZE,PPS,AVG_MBITS_RX
+64,14451344.00,9718.75 PACKET LOSSES
+576,2097388.80,10004.00
+1500,822328.00,10003.00
+RATE:10
+SIZE,PPS,AVG_MBITS_RX
+64,14458865.10,9714.00 PACKET LOSSES
+576,2097387.20,9979.00
+1500,822329.60,10003.00
+RATE:50
+SIZE,PPS,AVG_MBITS_RX
+64,14461403.35,9720.50 PACKET LOSSES
+576,2097382.40,9978.75
+1500,822332.80,10003.00
+RATE:100
+SIZE,PPS,AVG_MBITS_RX
+64,14446713.20,9710.00 PACKET LOSSES
+576,2097387.20,10004.00
+1500,822336.00,9978.00
